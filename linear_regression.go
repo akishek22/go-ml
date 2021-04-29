@@ -26,7 +26,7 @@ func (lr *LinearRegression) Fit(x [][]float64, y []float64) {
 }
 
 func (lr *LinearRegression) Predict(x [][]float64) []float64 {
-
+	return nil
 }
 
 func validate_input(x [][]float64, y []float64) error {
