@@ -1,4 +1,4 @@
-## Readding ESL 
+## Reading ESL 
 
 ### KNN
 ### Simple Linear Regression
