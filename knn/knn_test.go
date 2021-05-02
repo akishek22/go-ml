@@ -18,15 +18,15 @@ func TestKNNPredict(t *testing.T) {
 
 	sampleY := []string{
 		"Class-A",
-		"Class-A",
+		"Class-B",
 		"Class-A",
 
 		"Class-B",
-		"Class-B",
+		"Class-A",
 		"Class-B",
 	}
 
-	knn := NewKNN(2, EuclideanDistance)
+	knn := NewKNN(3, EuclideanDistance)
 	err := knn.Fit(sampleData, sampleY)
 	if err != nil {
 		t.Errorf(err.Error())
