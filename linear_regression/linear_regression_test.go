@@ -17,7 +17,7 @@ func TestLinearRegression(t *testing.T) {
 		{6},
 	}
 
-	y := []float64{5, 7, 9, 11, 13, 15}
+	y := []float64{1, 3, 5, 7, 9, 11}
 	linreg := NewLinearRegression(0.01, 1050)
 	linreg.Fit(x, y)
 	out := linreg.Predict(x)
