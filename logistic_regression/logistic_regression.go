@@ -20,7 +20,7 @@ func (lr *LogisticRegression) Fit(x [][]float64, y []float64) error {
 }
 
 func (lr *LogisticRegression) PredictOne(x []float64) float64 {
-	yhat = 
+
 	return 0
 }
 
