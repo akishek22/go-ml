@@ -32,6 +32,7 @@ func (lr *LogisticRegression) Predict(x [][]float64) []float64 {
 
 	return predictions
 }
+
 func Sigmod(x float64) float64 {
 	return 1.0 / (1.0 + math.Pow(math.E, -x))
 }
