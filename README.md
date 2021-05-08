@@ -2,3 +2,4 @@
 
 ### KNN
 ### Simple Linear Regression
+### Logistic Regression
