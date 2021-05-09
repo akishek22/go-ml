@@ -67,7 +67,7 @@ func (lr *LinearRegression) stochasticGradientDescent(train [][]float64, y []flo
 		for i, row := range train {
 			result := lr.PredictOne(row)
 			err := result - y[i]
-			sum_error = math.Pow(err, 2)
+			sum_error += math.Pow(err, 2)
 			lr.Model.Intercept = lr.Model.Intercept - learning_rate*err
 			for j := range lr.Model.Weights {
 				lr.Model.Weights[j] = lr.Model.Weights[j] - learning_rate*err*row[j]
@@ -76,9 +76,3 @@ func (lr *LinearRegression) stochasticGradientDescent(train [][]float64, y []flo
 		fmt.Printf("\n**Epoch = %d, Learning Rate = %f, Error = %2f\n", epoch, learning_rate, sum_error)
 	}
 }
-
-// func validate_input(x [][]float64, y []float64) error {
-// 	// x len must equal y len
-
-// 	return nil
-// }
