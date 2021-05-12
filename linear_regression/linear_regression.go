@@ -73,6 +73,7 @@ func (lr *LinearRegression) stochasticGradientDescent(train [][]float64, y []flo
 				lr.Model.Weights[j] = lr.Model.Weights[j] - learning_rate*err*row[j]
 			}
 		}
+
 		fmt.Printf("\n**Epoch = %d, Learning Rate = %f, Error = %2f\n", epoch, learning_rate, sum_error)
 	}
 }
